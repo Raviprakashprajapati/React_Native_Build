@@ -1,0 +1,23 @@
+
+cd android:
+./gradlew assembleDebug
+Path : android/app/build/outputs/apk/debug/app-debug.apk
+
+
+react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res
+
+cd android:
+./gradlew assembleRelease
+
+
+Archeive Ios command :
+
+xcodebuild archive \
+-workspace FitMeReach.xcworkspace \
+-scheme FitMeReach \
+-configuration Release \
+-destination 'generic/platform=iOS' \
+-archivePath ./build/FitMeReach.xcarchive
+
+
+

@@ -12,6 +12,7 @@ cd android:
 
 Archeive Ios command :
 
+cd ios:
 xcodebuild archive \
 -workspace FitMeReach.xcworkspace \
 -scheme FitMeReach \

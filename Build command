@@ -22,3 +22,10 @@ xcodebuild archive \
 
 
 
+
+ls -al
+open .zshrc
+source .zshrc
+
+
+
